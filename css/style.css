@@ -5,28 +5,63 @@
 }
 
 body {
-    font-family: 'seven-segment', sans-serif;
+    font-family: 'Seven Segment', sans-serif;
 }
+
  /* main */
-main {
+ main{
     display: flex;
     justify-content: center;
-}
+    align-items: center;
+ }
 
 .container {
     height: 500px;
     width: 300px;
-    border-radius: 5px;
-    background-color: rgb(234 234 234);
-    /* debug */
-    /* background-color: blue;
-    margin-top: 50px; */
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(234 234 234); 
 }
 
+/* immagine */
 .logo {
-    flex-wrap: wrap;
     max-width: 100%;
-    background-color: ;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+}
+
+/* schermo calcolatrice */
+.schermo {
+    background-color: black;
+    height: 50px;
+    display: flex;
+    justify-content: end;
+}
+
+.zero {
+    color: green;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.tastiera {
+    background-color: rgb(234 234 234);
+}
+
+.numeri {
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid black;
+    width: 66%;
+    height: 350px;
+}
+
+button {
+    padding: 20px;
+    margin: 5px;
+}
+
+.zeroo {
+    flex-grow: 1;
 }
